@@ -1,16 +1,66 @@
 /* ----set up--- */
 :root{
+--primary-color: ;
 
+
+}
+
+
+
+body,html{
+font-family: serif;
+font-size: 16px;
+line-height: 145%;
+box-sizing: border-box;
+text-rendering: optimizeSpeed;
+overflow-x: hidden;
 }
 
 *{
-
-}
-
-body,html{
-
+    box-sizing: inherit;
+    margin: 0;
+padding: 0;
 }
 
 .wrapper{
+ width: 1140px;
+ /* margin: 0 auto; */
+ background-color: aqua;
+ padding: 20px;
+ margin: 20px auto;
+}
 
+header,section,footer,nav {
+    display: block;
+    margin: 20px 0 20px 0;
+}
+
+#img-div{
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    width: 350px;
+    /* height: 500px; */
+   /* shape-outside: circle(55%); */
+   shape-outside: ellipse(200px 300px at 50% 50%);
+   
+}
+
+
+#img-div img{
+    width: 100%;
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+}
+
+#img-div #img-caption{
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify  ;
 }
