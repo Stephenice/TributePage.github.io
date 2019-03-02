@@ -40,14 +40,14 @@ header,section,footer,nav {
     padding-right: 50px;
     padding-bottom: 20px;
     width: 350px;
-    /* height: 500px; */
+    height: 500px;
    /* shape-outside: circle(55%); */
    shape-outside: ellipse(200px 300px at 50% 50%);
    
 }
 
 
-#img-div img{
+ img{
     width: 100%;
     border-radius: 40%;
     -webkit-border-radius: 40%;
@@ -63,4 +63,16 @@ header,section,footer,nav {
 
 p{
     text-align: justify  ;
+    font-size: 120%;
+    line-height: 145%;
+}
+
+@media only screen and (max-width:768px){
+    #img-div{
+        float: none; 
+        
+        width: 100%;
+      
+    }
+  
 }
