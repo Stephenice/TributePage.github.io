@@ -1,7 +1,7 @@
 /* ----set up--- */
 :root{
 --primary-color: ;
-
+--bg-color:rgba(139, 145, 145,0.1);
 
 }
 
@@ -24,55 +24,65 @@ padding: 0;
 
 .wrapper{
  width: 1140px;
- /* margin: 0 auto; */
- background-color: aqua;
- padding: 20px;
- margin: 20px auto;
+ margin: 0 auto;
+ background-color: var(--bg-color);
+ border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-header,section,footer,nav {
+header,section,footer, nav,#tribute-info,#img-div {
     display: block;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
+}
+
+h1{
+    margin-bottom: 5px;
+}
+
+/* ----header */
+
+header#title{
+    text-align: center;
+    padding: 10px 0;
 }
 
 #img-div{
-    float: left;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    width: 350px;
-    height: 500px;
-   /* shape-outside: circle(55%); */
-   shape-outside: ellipse(200px 300px at 50% 50%);
-   
-}
-
-
- img{
-    width: 100%;
-    border-radius: 40%;
-    -webkit-border-radius: 40%;
-    -moz-border-radius: 40%;
-    -ms-border-radius: 40%;
-    -o-border-radius: 40%;
-}
-
-#img-div #img-caption{
+    width: inherit;
     text-align: center;
-    font-weight: bold;
 }
 
-p{
-    text-align: justify  ;
-    font-size: 120%;
-    line-height: 145%;
+#img-div #image{
+    width: 80%;
 }
 
-@media only screen and (max-width:768px){
-    #img-div{
-        float: none; 
-        
-        width: 100%;
-      
-    }
-  
+/* -------nav--- */
+
+.nav{
+    width: 30% ;
+    border: 2px solid var(--bg-color);
+}
+
+.nav ul{
+
+}
+
+.nav ul li{
+    list-style: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid var(--bg-color);
+    cursor: pointer;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+    background-color: aliceblue;
+    color: #fff;
 }
