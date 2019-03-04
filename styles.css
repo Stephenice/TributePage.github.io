@@ -9,7 +9,7 @@
 
 body,html{
 font-family: serif;
-font-size: 16px;
+font-size: 18px;
 line-height: 145%;
 box-sizing: border-box;
 text-rendering: optimizeSpeed;
@@ -31,6 +31,7 @@ padding: 0;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    padding: 0 10px;
 }
 
 header,section,footer, nav,#tribute-info,#img-div {
@@ -38,13 +39,14 @@ header,section,footer, nav,#tribute-info,#img-div {
     margin: 10px 0 20px 0;
 }
 
-h1{
+h1,h2{
     margin-bottom: 5px;
+    margin-top: 25px;
 }
 
 /* ----header */
 
-header#title{
+header#title, .footer{
     text-align: center;
     padding: 10px 0;
 }
@@ -55,18 +57,31 @@ header#title{
 }
 
 #img-div #image{
-    width: 80%;
+    max-width: 80%;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
-/* -------nav--- */
+/* img#image{
+    display: block;
+} */
 
+/* -------nav--- */
+#tribute-info{
+    width: 100%;
+    overflow: hidden;
+}
 .nav{
     width: 30% ;
     border: 2px solid var(--bg-color);
+    display: block;
+    float: left;
+   margin-right: 10px;
 }
 
 .nav ul{
-
+width: 100%;
 }
 
 .nav ul li{
@@ -80,9 +95,46 @@ header#title{
 .nav ul li a{
   text-decoration: none;
   cursor: pointer;
+  color: initial;
+  font-weight: bold;
 }
 
-.nav ul li:hover {
+.nav ul li:hover:not(:nth-child(1)) {
     background-color: aliceblue;
-    color: #fff;
 }
+
+
+.nav-p{
+    width: 68%;
+padding: 10px 10px;
+float: right;
+display: block;
+}
+
+blockquote { 
+    /* display: block; */
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 120%;
+    position: relative;
+    padding: 20px;
+  }
+
+  blockquote::before{
+      content: "\201C";
+      font-size: 300%;
+      /* display: block; */
+position: absolute;
+ /* top: 5px; */
+left: -5px; 
+
+  }
+
+ .section-contain p{
+      margin: 15px 0;
+  }
+
+  /* ------footer-------- */
+  
