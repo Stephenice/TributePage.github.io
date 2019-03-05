@@ -63,6 +63,11 @@ header#title, .footer{
     margin-right: auto;
 }
 
+
+ #img-caption cite{
+    width: 80%;
+    border: 2px solid red;
+}
 /* img#image{
     display: block;
 } */
